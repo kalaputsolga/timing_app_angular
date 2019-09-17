@@ -1,16 +1,7 @@
-<div class="row">
-    <div class="col-xs-12">
-      <h2>{{ timing }}</h2>
-    </div>
-</div>   
-<div class="row">
-    <div class="col-xs-4">
-        <button class="btn btn-default btn-LG" (click) = "startStopClick()">START / STOP</button>
-    </div>
-    <div class="col-xs-4">
-        <button class="btn btn-default btn-LG" (click) = "waitClick()">WAIT</button>
-    </div>
-    <div class="col-xs-4">
-        <button class="btn btn-default btn-LG" (click) = "resetClick()">RESET</button>
-    </div>
-</div>
+<h2> {{hoursDisplay ? hoursDisplay : '00'}} 
+    : {{(minutesDisplay) && (minutesDisplay <= 59) ? minutesDisplay : '00'}} 
+    : {{(secondsDisplay) && (secondsDisplay <= 59) ? secondsDisplay : '00'}}
+</h2>
+  
+  
+

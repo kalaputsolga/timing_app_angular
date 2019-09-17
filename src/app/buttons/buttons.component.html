@@ -1,0 +1,21 @@
+ <div class="col-xs-4">
+    <button class="btn btn-default btn-lg" 
+            [disabled]="play" 
+            (click)="playTimer()">
+         START
+    </button>
+</div>
+<div class="col-xs-4">
+    <button class="btn btn-default btn-lg" 
+            [disabled]="!play" 
+            (click)="pauseTimer()">
+        WAIT
+    </button>
+</div>
+<div class="col-xs-4">
+    <button class="btn btn-default btn-lg" 
+            (click)="stopTimer()">
+        RESET
+    </button>
+</div>
+
